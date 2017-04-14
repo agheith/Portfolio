@@ -22,3 +22,16 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+### Features
+- Real time chat engine for comments
+- Blog
+- Drag and drop interface
+- Portfolio
+
+
+```Ruby
+def myMethod
+    puts "Welcome..."
+end
+```    
