@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  resources :blogs
+
   resources :profiles
-  get 'pages/home'
+  get '/home' => 'pages#home'
 
   get 'pages/about'
 
