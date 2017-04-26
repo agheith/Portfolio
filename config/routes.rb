@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :blogs
 
   resources :profiles
+
   get '/home' => 'pages#home'
 
   get 'pages/about'
