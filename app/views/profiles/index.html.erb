@@ -1,11 +1,17 @@
 
 <h1>index</h1>
 
+<!-- <a href="/profiles/new">Create new portfolio item</a> -->
+    <%= link_to "Create new Item", new_profile_path %>
+
+
 <% @profile_itmes.each do |items| %>
 
 <p><%= items.title %></p>
 <p><%= items.subtitle %></p>
 <p><%= items.body %></p>
 <%= image_tag items.thumb_image unless items.thumb_image.nil? %>
+
+<%= link_to "Edit", edit_profile_path(items.id) %>
 
 <% end %>
