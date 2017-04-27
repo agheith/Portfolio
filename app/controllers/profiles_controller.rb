@@ -35,6 +35,10 @@ class ProfilesController < ApplicationController
       end
     end
 
+    def show
+        @portfolio_item = Profile.find(params[:id])
+    end
+
 
     private
 
