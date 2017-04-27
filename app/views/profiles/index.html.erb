@@ -1,0 +1,11 @@
+
+<h1>index</h1>
+
+<% @profile_itmes.each do |items| %>
+
+<p><%= items.title %></p>
+<p><%= items.subtitle %></p>
+<p><%= items.body %></p>
+<%= image_tag items.thumb_image %>
+
+<% end %>
