@@ -7,11 +7,11 @@
 
 <% @profile_itmes.each do |items| %>
 
-<p><%= items.title %></p>
+<p><%= link_to items.title, profile_path(items) %></p>
 <p><%= items.subtitle %></p>
 <p><%= items.body %></p>
 <%= image_tag items.thumb_image unless items.thumb_image.nil? %>
 
-<%= link_to "Edit", edit_profile_path(items.id) %>
+<%= link_to "Edit", edit_profile_path(items) %>
 
 <% end %>
