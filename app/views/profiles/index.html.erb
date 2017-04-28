@@ -13,5 +13,6 @@
 <%= image_tag items.thumb_image unless items.thumb_image.nil? %>
 
 <%= link_to "Edit", edit_profile_path(items) %>
+<%= link_to "Delete Item", profile_path(items) ,method: :delete, data: { confirm: 'Are you sure?' } %>
 
 <% end %>
