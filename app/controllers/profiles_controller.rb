@@ -41,7 +41,7 @@ class ProfilesController < ApplicationController
 
     def destroy
       @portfolio_item = Profile.find(params[:id])
-      
+
       @portfolio_item.destroy
       respond_to do |format|
         format.html { redirect_to profiles_url, notice: 'Profile item was successfully destroyed.' }
