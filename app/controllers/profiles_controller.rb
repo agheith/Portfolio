@@ -53,7 +53,11 @@ class ProfilesController < ApplicationController
     private
 
     def portfolio_params
-      params.require(:profile).permit(:title, :subtitle, :body, technologies_attributes: [:name])
+      params.require(:profile).permit(:title,
+                                      :subtitle,
+                                      :body,
+                                       technologies_attributes: [:name]
+                                     )
     end
 
 end
