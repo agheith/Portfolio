@@ -1,4 +1,5 @@
 class ProfilesController < ApplicationController
+    layout "profile"
 
     def index
         @profile_itmes = Profile.all
