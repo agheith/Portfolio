@@ -15,4 +15,8 @@ module ApplicationHelper
         end
     end
 
+    def copyright_generator
+        AmerViewTool::Renderer.copyright 'Amer Gheith', "All rights reserved"
+    end
+
 end

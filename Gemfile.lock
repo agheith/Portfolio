@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/agheith/amer_view_tool
+  revision: 2602943153b5315062a26b9329327f18017ec4c0
+  specs:
+    amer_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -175,6 +181,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  amer_view_tool!
   bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)
