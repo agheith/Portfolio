@@ -1,14 +1,14 @@
-<%= image_tag @portfolio_item.main_image %>
+<%= image_tag @profile_item.main_image %>
 
-<h1><%= @portfolio_item.title %></h1>
+<h1><%= @profile_item.title %></h1>
 
-<em><%= @portfolio_item.subtitle %></em>
+<em><%= @profile_item.subtitle %></em>
 
-<p><%= @portfolio_item.body %></p>
+<p><%= @profile_item.body %></p>
 
 <h2>Technologies Used:</h2>
 
-<% @portfolio_item.technologies.each do |tech| %>
+<% @profile_item.technologies.each do |tech| %>
 
     <p><%= tech.name %></p>
 

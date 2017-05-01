@@ -1,0 +1,13 @@
+<p><%= link_to profile_item.title, profile_show_path(profile_item) %></p>
+
+<p><%= profile_item.subtitle %></p>
+
+<p><%= profile_item.body %></p>
+
+<%= image_tag profile_item.thumb_image unless profile_item.thumb_image.nil? %>
+
+<%= link_to "Edit", edit_profile_path(profile_item)  %>
+<%= link_to "Delete Item", profile_path(profile_item), method: :delete, data: { confirm: 'Are you sure?' } %>
+
+<!-- profile_show_path(profiel_item)
+edit_profile_path(items) -->
