@@ -6,8 +6,8 @@
 
 <%= image_tag profile_item.thumb_image unless profile_item.thumb_image.nil? %>
 
-<%= link_to "Edit", edit_profile_path(profile_item)  %>
-<%= link_to "Delete Item", profile_path(profile_item), method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to "Edit", edit_profile_path(profile_item) if logged_in?(:site_admin)  %>
+<%= link_to "Delete Item", profile_path(profile_item), method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
 
 <!-- profile_show_path(profiel_item)
 edit_profile_path(items) -->

@@ -1,5 +1,6 @@
 class ProfilesController < ApplicationController
     layout "profile"
+    access all: [:show, :index], user: {except: [:destroy, :new, :create, :edit]}, site_admin: :all
 
     def index
         @profile_items = Profile.all
@@ -45,7 +46,7 @@ class ProfilesController < ApplicationController
       @profile_item = Profile.find(params[:id])
 
       @profile_item.destroy
-      
+
       respond_to do |format|
         format.html { redirect_to profiles_url, notice: 'Profile item was successfully destroyed.' }
       end
